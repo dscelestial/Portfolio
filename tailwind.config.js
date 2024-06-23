@@ -8,8 +8,11 @@ export default {
     extend: {
       fontFamily: {
         lexend: ['Lexend Deca', 'sans-serif'],
-      }
+      },
     },
+  },
+  daisyui:{
+    themes:["light", "night",]
   },
   plugins: [
     require('daisyui'),

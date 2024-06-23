@@ -1,15 +1,17 @@
 import React from 'react';
 import Navbar from './components/Navbar.jsx';
 import AboutMe from './components/AboutMe.jsx';
+import Projects from './components/Projects.jsx';
 import TechStack from './components/TechStack.jsx';
 
 function App() {
   return (
-    <main className=' bg-white max-w-7xl m-auto'>
+    <main className='max-w-6xl m-auto'>
       <section className='min-h-screen'>
         <Navbar />
         <AboutMe />
-        <TechStack />
+        {/* <TechStack /> */}
+        <Projects />
       </section>
     </main>
   );
