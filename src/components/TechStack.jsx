@@ -15,10 +15,12 @@ import gitsvg from '../assets/svg/git.svg';
 const TechStack = () => {
     return (
         <div className='mt-80 h-full py-10'>
-            <div className='py-4'>
+
+            <div className='text-center text-3xl md:text-4xl font-bold text-white mt-4 mb-8 md:mb-12 py-4'>
                 <h1>Technology Stack</h1>
             </div>
-            <div className='flex'>
+
+            <div className='grid md:grid-cols-8 gap-6 md:gap-10'>
                 <div className='relative group cursor-pointer bg-slate-500 rounded-md py-4 px-4 mr-4'>
                     <img src={reactsvg} alt="REACT SVG" width={60} height={60} className='transition-opacity duration-300 group-hover:opacity-0'/>
                     <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">

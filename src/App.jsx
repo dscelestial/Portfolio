@@ -10,8 +10,8 @@ function App() {
       <section className='min-h-screen'>
         <Navbar />
         <AboutMe />
-        {/* <TechStack /> */}
         <Projects />
+        <TechStack />
       </section>
     </main>
   );
