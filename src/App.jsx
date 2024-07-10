@@ -6,7 +6,7 @@ import TechStack from './components/TechStack.jsx';
 
 function App() {
   return (
-    <main className='max-w-6xl m-auto'>
+    <main className='max-w-7xl m-auto'>
       <section className='min-h-screen'>
         <Navbar />
         <AboutMe />
