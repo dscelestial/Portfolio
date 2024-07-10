@@ -7,13 +7,6 @@ import avatar from '../assets/images/avatar.jpg';
 
 const AboutMe = () => {
 
-    // const scrollToSection = (elementId) => {
-    //     const element = document.getElementById(elementId);
-    //     if (element) {
-    //         element.scrollIntoView({ behavior: 'smooth' });
-    //     }
-    // };
-
     return (
         <div className='flex flex-col md:flex-row items-center justify-center h-full py-10 mb-48 px-4 md:px-0 m-auto'> 
             <div className='md:pr-10 mb-10 md:mb-0 text-center md:text-left'>
