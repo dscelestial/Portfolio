@@ -7,9 +7,12 @@ import TechStack from './components/TechStack.jsx';
 function App() {
   return (
     <main className='max-w-7xl m-auto'>
-      <section className='min-h-screen'>
-        <Navbar />
-        <AboutMe />
+      <section>
+        <div className='min-h-screen'>
+          <Navbar />
+          <AboutMe />
+        </div>
+        
         <Projects />
         <TechStack />
       </section>
