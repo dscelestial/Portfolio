@@ -14,7 +14,7 @@ import gitsvg from '../assets/svg/git.svg';
 
 const TechStack = () => {
     return (
-        <div className='mt-80 h-full py-10'>
+        <div className='mt-10 h-full py-10'>
 
             <div className='text-center text-3xl md:text-4xl font-bold text-white mt-4 mb-8 md:mb-12 py-4'>
                 <h1>Technology Stack</h1>
