@@ -13,6 +13,8 @@ export default {
         primary: '#BB86FC',
         secondary: '#03DAC6',
         text: '#E0E0E0',
+        card: '#1E1A3D',
+        miniCard: '#302B54',
       },
     },
   },

@@ -20,19 +20,21 @@ const TechStack = () => {
                 <h1>Technology Stack</h1>
             </div>
 
-            <section>
+            <div className='p-2 rounded-lg bg-card shadow-lg'>
                 <div>
-                    <h2>Front End</h2>
+                    <h2 className='py-4'>Front End</h2>
                 </div>
                 <div className='grid md:grid-cols-8 gap-6 md:gap-10'>
-                    <div className='relative group cursor-pointer bg-slate-500 rounded-md py-4 px-4 mr-4'>
+                    <div className='relative group cursor-pointer rounded-md py-4 px-4 mr-4'>
                         <img src={reactsvg} alt="REACT SVG" width={60} height={60} className='transition-opacity duration-300 group-hover:opacity-0'/>
                         <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                             React
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+
+
             
 
         </div>
