@@ -14,25 +14,59 @@ import gitsvg from '../assets/svg/git.svg';
 
 const TechStack = () => {
     return (
-        <div className='my-10 h-full py-10'>
-
-            <div className='text-center text-3xl md:text-4xl font-bold text-secondary mt-4 mb-8 md:mb-12 py-4'>
+        <div className='my-10 h-full py-10 mx-0 sm:mx-3 md:mx-5'>
+            <div className='text-center text-4xl md:text-4xl font-bold text-secondary mt-4 mb-8 md:mb-12 py-4'>
                 <h1>Technology Stack</h1>
             </div>
 
-            <div className='p-2 rounded-lg bg-card shadow-lg'>
-                <div>
-                    <h2 className='py-4'>Front End</h2>
-                </div>
-                <div className='grid md:grid-cols-8 gap-6 md:gap-10'>
-                    <div className='relative group cursor-pointer rounded-md py-4 px-4 mr-4'>
-                        <img src={reactsvg} alt="REACT SVG" width={60} height={60} className='transition-opacity duration-300 group-hover:opacity-0'/>
-                        <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                            React
+            <section className='flex flex-col md:flex-row items-center justify-center'>
+                <div className='p-2 mx-2 rounded-lg bg-card shadow-lg w-1/3'>
+                    <h1 className='text-xl text-center font-bold text-secondary py-4 '>Front End</h1>
+                    <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4'>
+                        <div className='relative group cursor-pointer rounded-md py-4 px-4 flex items-center justify-center'>
+                            <img src={reactsvg} alt="REACT SVG" width={70} height={70} className='transition-opacity duration-300 group-hover:opacity-0'/>
+                            <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                                React
+                            </div>
+                        </div>
+
+                        <div className='relative group cursor-pointer rounded-md py-4 px-4 flex items-center justify-center'>
+                            <img src={reactsvg} alt="Another SVG" width={70} height={70} className='transition-opacity duration-300 group-hover:opacity-0'/>
+                            <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                                Another Tech
+                            </div>
+                        </div>
+
+                        <div className='relative group cursor-pointer rounded-md py-4 px-4 flex items-center justify-center'>
+                            <img src={reactsvg} alt="Another SVG" width={70} height={70} className='transition-opacity duration-300 group-hover:opacity-0'/>
+                            <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                                Another Tech
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+
+                <div className='p-2 mx-3 rounded-lg bg-card shadow-lg w-1/3'>
+                    <h1 className='py-4'>Front End</h1>
+                        <div className='relative group cursor-pointer rounded-md py-4 px-4 mr-4'>
+                            <img src={reactsvg} alt="REACT SVG" width={60} height={60} className='transition-opacity duration-300 group-hover:opacity-0'/>
+                            <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                                React
+                            </div>
+                        </div>
+                </div>
+
+                <div className='p-2 mx-2 rounded-lg bg-card shadow-lg w-1/3'>
+                    <h1 className='py-4'>Front End</h1>
+                        <div className='relative group cursor-pointer rounded-md py-4 px-4 mr-4'>
+                            <img src={reactsvg} alt="REACT SVG" width={60} height={60} className='transition-opacity duration-300 group-hover:opacity-0'/>
+                            <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                                React
+                            </div>
+                        </div>
+                </div>
+            </section>
+            
 
 
             
