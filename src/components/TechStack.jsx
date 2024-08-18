@@ -11,6 +11,8 @@ import javasvg from '../assets/svg/java.svg';
 import wordpresssvg from '../assets/svg/wordpress.svg';
 import mysqlsvg from '../assets/svg/mysql.svg';
 import gitsvg from '../assets/svg/git.svg';
+import githubsvg from '../assets/svg/github.svg';
+import filezillasvg from '../assets/svg/filezilla.svg';
 
 const TechStack = () => {
     return (
@@ -20,9 +22,10 @@ const TechStack = () => {
             </div>
 
             <section className='flex flex-col md:flex-row items-center justify-center'>
-                <div className='p-2 mx-2 rounded-lg bg-card shadow-lg w-1/3'>
-                    <h1 className='text-xl text-center font-bold text-secondary py-4 '>Front End</h1>
-                    <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4'>
+                {/* Front End Card */}
+                <div className='p-2 mx-4 rounded-lg bg-card shadow-lg w-1/3'>
+                    <h1 className='text-xl text-center font-bold text-white py-4 '>Front End</h1>
+                    <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3'>
                         <div className='relative group cursor-pointer rounded-md py-4 px-4 flex items-center justify-center'>
                             <img src={reactsvg} alt="REACT SVG" width={70} height={70} className='transition-opacity duration-300 group-hover:opacity-0'/>
                             <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
@@ -31,116 +34,120 @@ const TechStack = () => {
                         </div>
 
                         <div className='relative group cursor-pointer rounded-md py-4 px-4 flex items-center justify-center'>
-                            <img src={reactsvg} alt="Another SVG" width={70} height={70} className='transition-opacity duration-300 group-hover:opacity-0'/>
+                            <img src={htmlsvg} alt="Another SVG" width={70} height={70} className='transition-opacity duration-300 group-hover:opacity-0'/>
                             <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                                Another Tech
+                                HTML5
                             </div>
                         </div>
 
                         <div className='relative group cursor-pointer rounded-md py-4 px-4 flex items-center justify-center'>
-                            <img src={reactsvg} alt="Another SVG" width={70} height={70} className='transition-opacity duration-300 group-hover:opacity-0'/>
+                            <img src={csssvg} alt="Another SVG" width={70} height={70} className='transition-opacity duration-300 group-hover:opacity-0'/>
                             <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                                Another Tech
+                                CSS
+                            </div>
+                        </div>
+
+                        <div className='relative group cursor-pointer rounded-md py-4 px-4 flex items-center justify-center'>
+                            <img src={javascriptsvg} alt="REACT SVG" width={70} height={70} className='transition-opacity duration-300 group-hover:opacity-0'/>
+                            <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                                JavaScript
+                            </div>
+                        </div>
+
+                        <div className='relative group cursor-pointer rounded-md py-4 px-4 flex items-center justify-center'>
+                            <img src={bootstrapsvg} alt="Another SVG" width={70} height={70} className='transition-opacity duration-300 group-hover:opacity-0'/>
+                            <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                                Bootstrap
+                            </div>
+                        </div>
+
+                        <div className='relative group cursor-pointer rounded-md py-4 px-4 flex items-center justify-center'>
+                            <img src={tailwindsvg} alt="Another SVG" width={70} height={70} className='transition-opacity duration-300 group-hover:opacity-0'/>
+                            <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                                Tailwind CSS
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div className='p-2 mx-3 rounded-lg bg-card shadow-lg w-1/3'>
-                    <h1 className='py-4'>Front End</h1>
-                        <div className='relative group cursor-pointer rounded-md py-4 px-4 mr-4'>
-                            <img src={reactsvg} alt="REACT SVG" width={60} height={60} className='transition-opacity duration-300 group-hover:opacity-0'/>
+                {/* Back End Card */}
+                <div className='p-2 mx-4 rounded-lg bg-card shadow-lg w-1/3'>
+                    <h1 className='text-xl text-center font-bold text-white py-4 '>Back End</h1>
+                    <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3'>
+                        <div className='relative group cursor-pointer rounded-md py-4 px-4 flex items-center justify-center'>
+                            <img src={phpsvg} alt="REACT SVG" width={70} height={70} className='transition-opacity duration-300 group-hover:opacity-0'/>
                             <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                                React
+                                PHP
                             </div>
                         </div>
+
+                        <div className='relative group cursor-pointer rounded-md py-4 px-4 flex items-center justify-center'>
+                            <img src={javasvg} alt="Another SVG" width={70} height={70} className='transition-opacity duration-300 group-hover:opacity-0'/>
+                            <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                                Java
+                            </div>
+                        </div>
+
+                        <div className='relative group cursor-pointer rounded-md py-4 px-4 flex items-center justify-center'>
+                            <img src={javascriptsvg} alt="Another SVG" width={70} height={70} className='transition-opacity duration-300 group-hover:opacity-0'/>
+                            <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                                Javascript
+                            </div>
+                        </div>
+
+                        <div className='relative group cursor-pointer rounded-md py-4 px-4 flex items-center justify-center'>
+                            <img src={laravelsvg} alt="REACT SVG" width={70} height={70} className='transition-opacity duration-300 group-hover:opacity-0'/>
+                            <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                                Laravel
+                            </div>
+                        </div>
+
+                        <div className='relative group cursor-pointer rounded-md py-4 px-4 flex items-center justify-center'>
+                            <img src={mysqlsvg} alt="Another SVG" width={70} height={70} className='transition-opacity duration-300 group-hover:opacity-0'/>
+                            <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                                MySql
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div className='p-2 mx-2 rounded-lg bg-card shadow-lg w-1/3'>
-                    <h1 className='py-4'>Front End</h1>
-                        <div className='relative group cursor-pointer rounded-md py-4 px-4 mr-4'>
-                            <img src={reactsvg} alt="REACT SVG" width={60} height={60} className='transition-opacity duration-300 group-hover:opacity-0'/>
+                {/* Other Card */}
+                <div className='p-2 mx-4 rounded-lg bg-card shadow-lg w-1/3'>
+                    <h1 className='text-xl text-center font-bold text-white py-4 '>Others</h1>
+                    <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3'>
+                        <div className='relative group cursor-pointer rounded-md py-4 px-4 flex items-center justify-center'>
+                            <img src={gitsvg} alt="REACT SVG" width={70} height={70} className='transition-opacity duration-300 group-hover:opacity-0'/>
                             <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                                React
+                                Git
                             </div>
                         </div>
+
+                        <div className='relative group cursor-pointer rounded-md py-4 px-4 flex items-center justify-center'>
+                            <img src={githubsvg} alt="Another SVG" width={70} height={70} className='transition-opacity duration-300 group-hover:opacity-0'/>
+                            <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                                Github
+                            </div>
+                        </div>
+
+                        <div className='relative group cursor-pointer rounded-md py-4 px-4 flex items-center justify-center'>
+                            <img src={wordpresssvg} alt="Another SVG" width={70} height={70} className='transition-opacity duration-300 group-hover:opacity-0'/>
+                            <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                                WordPress
+                            </div>
+                        </div>
+
+                        <div className='relative group cursor-pointer rounded-md py-4 px-4 flex items-center justify-center'>
+                            <img src={filezillasvg} alt="REACT SVG" width={70} height={70} className='transition-opacity duration-300 group-hover:opacity-0'/>
+                            <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                                FileZilla
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
-            
-
-
-            
-
         </div>
         
     )
 }
 
 export default TechStack
-
-{/* <div className='relative group cursor-pointer bg-slate-500 rounded-md py-4 px-4 mr-4'>
-                    <img src={htmlsvg} alt="REACT SVG" width={60} height={60} className='transition-opacity duration-300 group-hover:opacity-0'/>
-                    <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                        Html
-                    </div>
-                </div>
-                <div className='relative group cursor-pointer bg-slate-500 rounded-md py-4 px-4 mr-4'>
-                    <img src={csssvg} alt="Css SVG" width={60} height={60} className='transition-opacity duration-300 group-hover:opacity-0'/>
-                    <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                        Css
-                    </div>
-                </div>
-                <div className='relative group cursor-pointer bg-slate-500 rounded-md py-4 px-4 mr-4'>
-                    <img src={javascriptsvg} alt="Javascript SVG" width={60} height={60} className='transition-opacity duration-300 group-hover:opacity-0'/>
-                    <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                        Javascript
-                    </div>
-                </div>
-                <div className='relative group cursor-pointer bg-slate-500 rounded-md py-4 px-4 mr-4'>
-                    <img src={bootstrapsvg} alt="Bootstrap SVG" width={60} height={60} className='transition-opacity duration-300 group-hover:opacity-0'/>
-                    <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                        Bootstrap
-                    </div>
-                </div>
-                <div className='relative group cursor-pointer bg-slate-500 rounded-md py-4 px-4 mr-4'>
-                    <img src={tailwindsvg} alt="Tailwind SVG" width={60} height={60} className='transition-opacity duration-300 group-hover:opacity-0'/>
-                    <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                        Tailwind
-                    </div>
-                </div>
-                <div className='relative group cursor-pointer bg-slate-500 rounded-md py-4 px-4 mr-4'>
-                    <img src={laravelsvg} alt="Laravel SVG" width={60} height={60} className='transition-opacity duration-300 group-hover:opacity-0'/>
-                    <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                        Laravel
-                    </div>
-                </div>
-                <div className='relative group cursor-pointer bg-slate-500 rounded-md py-4 px-4 mr-4'>
-                    <img src={phpsvg} alt="Php SVG" width={60} height={60} className='transition-opacity duration-300 group-hover:opacity-0'/>
-                    <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                        Php
-                    </div>
-                </div>
-                <div className='relative group cursor-pointer bg-slate-500 rounded-md py-4 px-4 mr-4'>
-                    <img src={javasvg} alt="Java SVG" width={60} height={60} className='transition-opacity duration-300 group-hover:opacity-0'/>
-                    <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                        Java
-                    </div>
-                </div>
-                <div className='relative group cursor-pointer bg-slate-500 rounded-md py-4 px-4 mr-4'>
-                    <img src={wordpresssvg} alt="Wordpress SVG" width={60} height={60} className='transition-opacity duration-300 group-hover:opacity-0'/>
-                    <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                        Wordpress
-                    </div>
-                </div>
-                <div className='relative group cursor-pointer bg-slate-500 rounded-md py-4 px-4 mr-4'>
-                    <img src={mysqlsvg} alt="MySql SVG" width={60} height={60} className='transition-opacity duration-300 group-hover:opacity-0'/>
-                    <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                        MySql
-                    </div>
-                </div>
-                <div className='relative group cursor-pointer bg-slate-500 rounded-md py-4 px-4 mr-4'>
-                    <img src={gitsvg} alt="Git SVG" width={60} height={60} className='transition-opacity duration-300 group-hover:opacity-0'/>
-                    <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                        Git
-                    </div>
-                </div> */}
