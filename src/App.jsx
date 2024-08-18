@@ -11,7 +11,7 @@ function App() {
           <Navbar />
           <AboutMe />
         </div>
-        {/* <Projects /> */}
+        <Projects />
         <TechStack />
     </main>
   );
