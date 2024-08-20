@@ -3,7 +3,8 @@ import Navbar from './components/Navbar.jsx';
 import AboutMe from './components/AboutMe.jsx';
 import Projects from './components/Projects.jsx';
 import TechStack from './components/TechStack.jsx';
-
+import Experience from './components/Experience.jsx';
+import Contacts from './components/Contacts.jsx'
 
 function App() {
   return (
