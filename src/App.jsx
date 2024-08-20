@@ -3,6 +3,7 @@ import Navbar from './components/Navbar.jsx';
 import AboutMe from './components/AboutMe.jsx';
 import Projects from './components/Projects.jsx';
 import TechStack from './components/TechStack.jsx';
+import Experience from './components/Experience.jsx';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         </div>
         <Projects />
         <TechStack />
+        <Experience />
     </main>
   );
 }

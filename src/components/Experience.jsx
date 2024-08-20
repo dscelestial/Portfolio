@@ -1,8 +1,10 @@
-import React from 'react'
+import React from 'react';
 
 const Experience = () => {
     return (
-        <div>Experience</div>
+        <section className='my-16 mx-0'>
+            <h5>My Experience</h5>
+        </section>
     )
 }
 
