@@ -1,8 +1,7 @@
 import React from 'react';
-import {AiFillFacebook, AiFillInstagram, AiFillLinkedin, AiFillGithub} from "react-icons/ai";
-import avatar from '../assets/images/avatar.jpg';
+import avatar from '../../assets/images/avatar.jpg';
 
-const AboutMe = () => {
+const Hero = () => {
 
     return (
         <div className='flex flex-col md:flex-row items-center justify-center h-full py-10 mb-48 px-4 md:px-0 m-auto'> 
@@ -23,11 +22,4 @@ const AboutMe = () => {
     )
 }
 
-export default AboutMe
-
-{/* <div  className=' bg-gray-600 text-4xl'>
-                <a href='https://www.facebook.com/dsCelestial'> <AiFillFacebook /> </a>
-                <a href='https://www.instagram.com/dscelestial/'> <AiFillInstagram /> </a>
-                <a href='https://www.linkedin.com/in/dscelestial/'> <AiFillLinkedin /> </a>
-                <a href='https://github.com/dscelestial'> <AiFillGithub /> </a>
-</div> */}
+export default Hero

@@ -1,18 +1,18 @@
 import React from 'react';
-import reactsvg from '../assets/svg/react.svg';
-import htmlsvg from '../assets/svg/html.svg';
-import csssvg from '../assets/svg/css.svg';
-import javascriptsvg from '../assets/svg/javascript.svg';
-import bootstrapsvg from '../assets/svg/bootstrap.svg';
-import tailwindsvg from '../assets/svg/tailwind.svg';
-import laravelsvg from '../assets/svg/laravel.svg';
-import phpsvg from '../assets/svg/php.svg';
-import javasvg from '../assets/svg/java.svg';
-import wordpresssvg from '../assets/svg/wordpress.svg';
-import mysqlsvg from '../assets/svg/mysql.svg';
-import gitsvg from '../assets/svg/git.svg';
-import githubsvg from '../assets/svg/github.svg';
-import filezillasvg from '../assets/svg/filezilla.svg';
+import reactsvg from '../../assets/svg/react.svg';
+import htmlsvg from '../../assets/svg/html.svg';
+import csssvg from '../../assets/svg/css.svg';
+import javascriptsvg from '../../assets/svg/javascript.svg';
+import bootstrapsvg from '../../assets/svg/bootstrap.svg';
+import tailwindsvg from '../../assets/svg/tailwind.svg';
+import laravelsvg from '../../assets/svg/laravel.svg';
+import phpsvg from '../../assets/svg/php.svg';
+import javasvg from '../../assets/svg/java.svg';
+import wordpresssvg from '../../assets/svg/wordpress.svg';
+import mysqlsvg from '../../assets/svg/mysql.svg';
+import gitsvg from '../../assets/svg/git.svg';
+import githubsvg from '../../assets/svg/github.svg';
+import filezillasvg from '../../assets/svg/filezilla.svg';
 
 const TechStack = () => {
     return (
