@@ -4,7 +4,7 @@ import { BsFillMoonStarsFill } from "react-icons/bs"
 const Navbar = () => {
     return (
         <nav className='py-10 mb-10 m-auto flex justify-between px-8'>
-            <h1 className='text-xl font-lexend'> dsCelestial </h1>
+            <h1 className='text-xl font-lexend'><a href='https://github.com/dscelestial' target='_blank'>dsCelestial </a> </h1>
             <ul className='flex items-center'>
                 <li>
                     <label className="swap swap-rotate">
