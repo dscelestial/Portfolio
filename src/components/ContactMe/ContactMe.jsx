@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react';
 
 const ContactMe = () => {
-  
+
+  const [notification, setNotification] = useState({ visible: false, message: '' });
+
   const onSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
@@ -11,22 +13,34 @@ const ContactMe = () => {
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
 
-    const res = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json"
-      },
-      body: json
-    }).then((res) => res.json());
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json"
+        },
+        body: json
+      }).then((res) => res.json());
 
-    if (res.success) {
-      console.log("Success", res);
+      if (res.success) {
+        setNotification({ visible: true, message: 'Your message has been sent!' });
+      } else {
+        setNotification({ visible: true, message: 'Something went wrong. Please try again.' });
+      }
+
+      // Hide notification after 5 seconds
+      setTimeout(() => setNotification({ ...notification, visible: false }), 5000);
+
+    } catch (error) {
+      setNotification({ visible: true, message: 'An error occurred. Please try again.' });
+      // Hide notification after 5 seconds
+      setTimeout(() => setNotification({ ...notification, visible: false }), 5000);
     }
   };
 
   return (
-    <section className="flex justify-center items-center min-h-1/2 p-4">
+    <section className="flex justify-center items-center min-h-1/2 p-4 relative">
       <form onSubmit={onSubmit} className="max-w-lg w-full bg-card p-8 rounded-lg shadow-lg">
         <h2 className="text-2xl font-bold text-center text-primary mb-6">Contact Me</h2>
 
@@ -70,8 +84,26 @@ const ContactMe = () => {
           Send Message
         </button>
       </form>
-    </section>
-  )
-}
 
-export default ContactMe
+      {/* Display notification */}
+      {notification.visible && (
+        <div className="fixed top-4 right-4 bg-green-500 text-white p-4 rounded-lg shadow-lg flex items-center space-x-3">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6 shrink-0 stroke-current"
+            fill="none"
+            viewBox="0 0 24 24">
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          <span>{notification.message}</span>
+        </div>
+      )}
+    </section>
+  );
+};
+
+export default ContactMe;
