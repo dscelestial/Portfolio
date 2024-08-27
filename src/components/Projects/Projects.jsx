@@ -2,12 +2,12 @@ import React from 'react';
 import ProjectCard from './ProjectCard';
 
 const projectsData = [
-    {
-        id: 1,
-        title: "React Portfolio Website",
-        description: "My Portolfio",
-        image: "/src/assets/projectimages/col.png",
-    },
+    // {
+    //     id: 1,
+    //     title: "React Portfolio Website",
+    //     description: "My Portolfio",
+    //     image: "/src/assets/projectimages/col.png",
+    // },
     {
         id: 2,
         title: "Laravel Twitter Clone",

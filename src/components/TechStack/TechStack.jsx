@@ -146,7 +146,6 @@ const TechStack = () => {
                 </div>
             </section>
         </div>
-        
     )
 }
 
