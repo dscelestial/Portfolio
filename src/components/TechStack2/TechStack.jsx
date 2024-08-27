@@ -4,15 +4,15 @@ import frontEnd from './frontEnd';
 import backEnd from './backEnd';
 import others from './others';
 
-const TechStack2 = () => {
+const TechStack = () => {
   return (
     <section className='px-4 py-8'>
-      <h1 className='text-center text-3xl md:text-4xl font-bold text-secondary mt-4 mb-8 md:mb-12 py-4'>Technology Stack</h1>
+      <h1 className='text-center text-3xl md:text-4xl font-bold text-primary mt-4 mb-8 md:mb-12 py-4'>Technology Stack</h1>
 
       <div className='flex flex-col lg:flex-row items-center lg:items-start justify-center gap-6'>
         {/* FRONT END */}
         <div className='p-4 mx-2 rounded-lg bg-card shadow-lg w-full md:w-2/3 lg:w-1/3'>
-          <h1 className='text-xl text-center font-bold text-white py-4'>Front End</h1>
+          <h1 className='text-xl text-center font-bold text-secondary py-4'>Front End</h1>
           <div className='grid grid-cols-2 sm:grid-cols-3 gap-4'>
             {frontEnd.map((fe) => (
               <TechStackCard
@@ -26,7 +26,7 @@ const TechStack2 = () => {
 
         {/* BACK END */}
         <div className='p-4 mx-2 rounded-lg bg-card shadow-lg w-full md:w-2/3 lg:w-1/3'>
-          <h1 className='text-xl text-center font-bold text-white py-4'>Back End</h1>
+          <h1 className='text-xl text-center font-bold text-secondary py-4'>Back End</h1>
           <div className='grid grid-cols-2 sm:grid-cols-3 gap-4'>
             {backEnd.map((be) => (
               <TechStackCard
@@ -40,7 +40,7 @@ const TechStack2 = () => {
 
         {/* OTHERS */}
         <div className='p-4 mx-2 rounded-lg bg-card shadow-lg w-full md:w-2/3 lg:w-1/3'>
-          <h1 className='text-xl text-center font-bold text-white py-4'>Others</h1>
+          <h1 className='text-xl text-center font-bold text-secondary py-4'>Others</h1>
           <div className='grid grid-cols-2 sm:grid-cols-3 gap-4'>
             {others.map((other) => (
               <TechStackCard
@@ -56,4 +56,4 @@ const TechStack2 = () => {
   )
 }
 
-export default TechStack2
+export default TechStack

@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from './components/Navbar/Navbar.jsx';
 import Hero from './components/Hero/Hero.jsx';
 import Projects from './components/Projects/Projects.jsx';
-import TechStack2 from './components/TechStack2/TechStack2.jsx';
+import TechStack from './components/TechStack2/TechStack.jsx';
 import Experience from './components/Experience/Experience.jsx';
 import ContactMe from './components/ContactMe/ContactMe.jsx';
 import Footer from './components/Footer/Footer.jsx';
@@ -13,7 +13,7 @@ function App() {
         <Navbar />
         <Hero />
         <Projects />
-        <TechStack2 />
+        <TechStack />
         <Experience />
         <ContactMe />
         <Footer />
