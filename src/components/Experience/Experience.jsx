@@ -83,7 +83,7 @@ const Experience = () => {
                     </div>
                     <div className="timeline-end mb-10">
                         <time className="font-mono italic">2019 - 2023</time>
-                        <div className="text-lg font-black">Bachelor Degree - Information Technology</div>
+                        <div className="text-lg font-black text-secondary">Bachelor Degree - Information Technology</div>
                         Polytechnic University of the Philippines - Taguig Branch
                     </div>
                     <hr />
@@ -104,7 +104,7 @@ const Experience = () => {
                     </div>
                     <div className="timeline-start mb-10 md:text-end">
                         <time className="font-mono italic">2017 - 2019</time>
-                        <div className="text-lg font-black">Senior High School - Information Communication Technology</div>
+                        <div className="text-lg font-black text-secondary">Senior High School - Information Communication Technology</div>
                         Senator Renato Companero Cayetano Memorial Science High School
                     </div>
                 </li>
