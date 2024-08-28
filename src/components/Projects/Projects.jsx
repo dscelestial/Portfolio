@@ -24,7 +24,7 @@ const projectsData = [
 
 const Projects = () => {
     return (
-        <div className='mb-48 py-10 px-4'>
+        <div className='my-12 py-12 px-4'>
             <h2 className="text-center text-3xl md:text-4xl font-bold text-primary mt-4 mb-8 md:mb-12 py-4" id='projects'>Projects</h2>
             <div className='grid md:grid-cols-3 gap-8 md:gap-12'>
                 {projectsData.map( (project) => (

@@ -2,8 +2,8 @@ import React from 'react';
 
 const Experience = () => {
     return (
-        <section className='flexe justify-center'>
-            <h1>My Experience</h1>
+        <section className='my-12 py-12'>
+            <h1 className='text-center text-3xl md:text-4xl font-bold text-primary mt-4 mb-8 md:mb-12 py-4'>My Experience</h1>
             <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
                 <li>
                     <div className="timeline-middle">
@@ -19,13 +19,9 @@ const Experience = () => {
                         </svg>
                     </div>
                     <div className="timeline-start mb-10 md:text-end">
-                        <time className="font-mono italic">1984</time>
-                        <div className="text-lg font-black">First Macintosh computer</div>
-                        The Apple Macintosh—later rebranded as the Macintosh 128K—is the original Apple Macintosh
-                        personal computer. It played a pivotal role in establishing desktop publishing as a general
-                        office function. The motherboard, a 9 in (23 cm) CRT monitor, and a floppy drive were housed
-                        in a beige case with integrated carrying handle; it came with a keyboard and single-button
-                        mouse.
+                        <time className="font-mono italic">2024</time>
+                        <div className="text-lg font-black text-secondary">Software Developer</div>
+                        Xtreme Offshore Outsourcing Inc.
                     </div>
                     <hr />
                 </li>
@@ -44,10 +40,9 @@ const Experience = () => {
                         </svg>
                     </div>
                     <div className="timeline-end mb-10">
-                        <time className="font-mono italic">2024</time>
-                        <div className="text-lg font-black">Software Developer</div>
-                        Xtreme Offshore Outsourcing Inc.
-                        <p>Tech Learned: PHP, Wordpress, Javascript, CSS, SCSS, Git, Github</p>
+                        <time className="font-mono italic">2023</time>
+                        <div className="text-lg font-black text-secondary">Web Developer / Designer</div>
+                        HR Management Business Solution Inc. 
                     </div>
                     <hr />
                 </li>
@@ -67,9 +62,8 @@ const Experience = () => {
                     </div>
                     <div className="timeline-start mb-10 md:text-end">
                         <time className="font-mono italic">2023</time>
-                        <div className="text-lg font-black">Web Developer / Designer</div>
-                        HR Management Business Solution Inc. 
-                        <p>Tech Learned: PHP, Wordpress, MySql, Github</p>
+                        <div className="text-lg font-black text-secondary">Project Manager</div>
+                        Capstone - Online Clinic Management System
                     </div>
                     <hr />
                 </li>

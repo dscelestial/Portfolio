@@ -6,7 +6,7 @@ import others from './others';
 
 const TechStack = () => {
   return (
-    <section className='px-4 py-8'>
+    <section className='px-4 py-12 my-12'>
       <h1 className='text-center text-3xl md:text-4xl font-bold text-primary mt-4 mb-8 md:mb-12 py-4'>Technology Stack</h1>
 
       <div className='flex flex-col lg:flex-row items-center lg:items-start justify-center gap-6'>

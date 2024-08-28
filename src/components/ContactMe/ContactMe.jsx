@@ -40,7 +40,7 @@ const ContactMe = () => {
   };
 
   return (
-    <section className="flex justify-center items-center min-h-1/2 p-4 relative">
+    <section className="flex justify-center items-center min-h-1/2 p-4 relative my-12 py-12">
       <form onSubmit={onSubmit} className="max-w-lg w-full bg-card p-8 rounded-lg shadow-lg">
         <h2 className="text-2xl font-bold text-center text-primary mb-6">Contact Me</h2>
 
