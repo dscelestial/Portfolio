@@ -1,8 +1,19 @@
 import React, { useState } from 'react';
 
 const ContactMe = () => {
-
+  const [phone, setPhone] = useState('');
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
   const [notification, setNotification] = useState({ visible: false, message: '' });
+
+  const handlePhoneChange = (e) => {
+    setPhone(e.target.value.replace(/^\+63/, ''));
+  };
+
+  const handleNameChange = (e) => {
+    setName(e.target.value);
+  };
 
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -11,6 +22,7 @@ const ContactMe = () => {
     formData.append("access_key", "8894f76c-c62f-4909-ac7c-2f0d0d9ffbd9");
 
     const object = Object.fromEntries(formData);
+    object.phone = `+63${phone}`;
     const json = JSON.stringify(object);
 
     try {
@@ -29,13 +41,11 @@ const ContactMe = () => {
         setNotification({ visible: true, message: 'Something went wrong. Please try again.' });
       }
 
-      // Hide notification after 5 seconds
-      setTimeout(() => setNotification({ ...notification, visible: false }), 5000);
+      setTimeout(() => setNotification({ ...notification, visible: false }), 3000);
 
     } catch (error) {
       setNotification({ visible: true, message: 'An error occurred. Please try again.' });
-      // Hide notification after 5 seconds
-      setTimeout(() => setNotification({ ...notification, visible: false }), 5000);
+      setTimeout(() => setNotification({ ...notification, visible: false }), 3000);
     }
   };
 
@@ -49,7 +59,9 @@ const ContactMe = () => {
           <input
             type="text"
             name='name'
-            className="w-full p-3 border border-secondary rounded-md bg-miniCard text-text placeholder-text focus:outline-none focus:ring-2 focus:ring-primary"
+            value={name}
+            onChange={handleNameChange}
+            className="w-full p-3 border border-secondary rounded-md bg-miniCard text-text placeholder-grey-400 focus:outline-none focus:ring-2 focus:ring-primary"
             placeholder="Enter your name"
             required
           />
@@ -60,8 +72,33 @@ const ContactMe = () => {
           <input
             type="email"
             name='email'
-            className="w-full p-3 border border-secondary rounded-md bg-miniCard text-text placeholder-text focus:outline-none focus:ring-2 focus:ring-primary"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            className="w-full p-3 border border-secondary rounded-md bg-miniCard text-text placeholder-grey-400 focus:outline-none focus:ring-2 focus:ring-primary"
             placeholder="Enter your email"
+            required
+          />
+        </div>
+
+        <div className="mb-4">
+          <label className="block text-text font-semibold mb-2">Contact</label>
+          <input
+            type="text"
+            name='phone'
+            value={`+63${phone}`}
+            onChange={handlePhoneChange}
+            className="w-full p-3 border border-secondary rounded-md bg-miniCard text-text placeholder-grey-400 focus:outline-none focus:ring-2 focus:ring-primary"
+            placeholder="+63912345678"
+            required
+          />
+        </div>
+
+        <div className="mb-4">
+          <input
+            type="hidden"
+            name='subject'
+            value={`New submission from ${name}`}
+            className="w-full p-3 border border-secondary rounded-md bg-miniCard text-text placeholder-grey-400 focus:outline-none focus:ring-2 focus:ring-primary"
             required
           />
         </div>
@@ -70,7 +107,9 @@ const ContactMe = () => {
           <label className="block text-text font-semibold mb-2">Your Message</label>
           <textarea
             name='message'
-            className="w-full p-3 border border-secondary rounded-md bg-miniCard text-text placeholder-text focus:outline-none focus:ring-2 focus:ring-primary resize-none h-52"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+            className="w-full p-3 border border-secondary rounded-md bg-miniCard text-text placeholder-grey-400 focus:outline-none focus:ring-2 focus:ring-primary resize-none h-52"
             placeholder="Enter your message"
             rows="4"
             required
@@ -85,7 +124,6 @@ const ContactMe = () => {
         </button>
       </form>
 
-      {/* Display notification */}
       {notification.visible && (
         <div className="fixed top-4 right-4 bg-green-500 text-white p-4 rounded-lg shadow-lg flex items-center space-x-3">
           <svg
