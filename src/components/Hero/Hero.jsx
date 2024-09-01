@@ -1,6 +1,5 @@
 import React from 'react';
 import avatar from '../../assets/images/avatar.jpg';
-import readerworld from '../../assets/images/BookReader.png';
 
 const Hero = () => {
 
@@ -17,7 +16,7 @@ const Hero = () => {
                 </div>
             </div>
             <div className='p-4 md:p-8'>
-                <img src={readerworld} className="max-w-64 sm:max-w-72 md:max-w-80 lg:max-w-md rounded-full shadow-2xl" />
+                <img src={avatar} className="max-w-64 sm:max-w-72 md:max-w-80 lg:max-w-md rounded-full shadow-2xl" />
             </div>
         </section>
     )
