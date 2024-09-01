@@ -17,7 +17,6 @@ const Hero = () => {
                 </div>
             </div>
             <div className='p-4 md:p-8'>
-                <img src={avatar} className="max-w-64 sm:max-w-72 md:max-w-80 lg:max-w-md rounded-full shadow-2xl" />
                 <img src={readerworld} className="max-w-64 sm:max-w-72 md:max-w-80 lg:max-w-md rounded-full shadow-2xl" />
             </div>
         </section>
