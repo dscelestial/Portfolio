@@ -2,7 +2,7 @@ import React from 'react';
 
 const Experience = () => {
     return (
-        <section className='my-12 py-12'>
+        <section className='my-12 py-12 px-4'>
             <h1 className='text-center text-3xl md:text-4xl font-bold text-primary mt-4 mb-8 md:mb-12 py-4'>My Experience</h1>
             <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
                 <li>
