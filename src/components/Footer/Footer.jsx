@@ -7,7 +7,7 @@ const Footer = () => {
     return (
         <footer className="flex flex-col items-center justify-center py-10 mt-20 text-text">
         <div className="mb-4 text-center">
-            <p className="text-lg mt-2">&copy; {currentYear} Daniel Stephen Celestial. All Rights Reserved.</p>
+            <p className="text-lg mt-2">&copy; {currentYear} Made & Designed by Daniel Stephen Celestial</p>
         </div>
 
         <div className="flex space-x-4 mt-2">
